@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt4.6</title>
+</head>
+
+<body>
+    <script>
+        function sapXepChuoiSo(chuoiSo) {
+            let mangSo = chuoiSo.split(",").map(Number);
+            mangSo.sort((a, b) => b - a);
+            let chuoiSoSapXep = mangSo.join(",");
+            return chuoiSoSapXep;
+        }
+        let chuoiSo = prompt("Nhập vào chuỗi số bất kỳ, cách nhau bởi dấu phẩy:");
+        console.log(sapXepChuoiSo(chuoiSo));
+    </script>
+</body>
+
+</html>

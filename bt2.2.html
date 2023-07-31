@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.2</title>
+</head>
+<body>
+    <script>
+        function elip(radius) {
+            let area = Math.PI*radius*radius; //S
+            let perimeter  = 2*Math.PI*radius; //C
+            let arr = [area, perimeter];
+            return [area, perimeter];
+        }
+        console.log(elip(5));
+        console.log(elip(10));
+        console.log(elip(15));
+        console.log(elip(20));
+        console.log(elip(25));
+        console.log(elip(30));
+    </script>
+</body>
+</html>

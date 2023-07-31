@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.3</title>
+</head>
+
+<body>
+    <script>
+        console.log(factorial(+prompt("nhap mot so bat ky de tinh giai thua")));
+        function factorial(n) {
+            if (n == 0 || n == 1) {
+                return 1;
+            }
+            else {
+                return n * factorial(n - 1);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
