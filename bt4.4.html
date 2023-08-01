@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt4.4</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button onclick="handleSubmit">Submit</button>
+    <script>
+        function handleSubmit() {
+            //lay ra gia tri cua o input
+            let value = document.getElementById("input").value;
+            console.log(value);
+            value = value.toLowerCase();
+            // tao 1 mang de chua danh sasch cac ki tu va so lan xuat hien cua no
+            let array = [];
+            //duyet tung ki tu cua chuoi trong o input va kiem tra
+            for (let i = 0; i < value.length; i++) { //neu ki tu i ton tai trong mang
+                let index = checkExistCharacter(array, value.charAt(i));
+                if (index >= 0) {
+                    // da ton tai ki tu, phai sua lai so lan xuat hien
+                    // for (let i = 0; i < array.length; i++) {
+                    //     if (array[i][0] == value.charAt(i)) {
+                    //         array[i][1] += 1
+                    //     }
+
+                    // }
+                    array[index][1] += 1
+                } else {
+                    //chua ton tai thi them moi vao mang array 1 phan tu co so lan xuat hien la 1
+                    array.push([value.charAt(i), 1])
+                }
+
+            }
+            for (let i = 0; i < array.length; i++) {
+                console.log(`Ky tu ${array[i][0]} xuat hien ${array[i][1]}lan`);
+
+            }
+        }
+        // kiem tra ton tai cua 1 ki tu o trong 1 mang va tra ve vi tri cua phan tu neu ton tai,
+        // neu khong ton tai thi tra ve - 1
+        function checkExistCharacter(arr, char) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i][0] == char) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+    </script>
+</body>
+
+</html>
