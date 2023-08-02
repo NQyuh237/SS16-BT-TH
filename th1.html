@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>th1</title>
+</head>
+
+<body>
+    <script>
+        let arrayInt = [1, 2, 3, 4, 5];
+
+
+
+        // console.log(arrayInt);
+        // let total = arrayInt.reduce((core, value) => {
+        //     //In các phần tử có giá trị chẵn và tính tổng
+        //     // return value % 2 == 0 ? core + value : core; 
+        //     // In các phần tử có chỉ số lẻ và tính tổng
+        //     // return value % 2 == 0 ? core : core + value;
+
+        // })
+        // console.log(total);
+
+
+
+        // in các phần tử có giá trị là max hoặc min
+        // arrayInt.sort(function (a, b) {
+        //     return b - a;
+        // })
+        // console.log("max", arrayInt[0]);
+        // console.log("min", arrayInt[arrayInt.length - 1]);
+        // console.log(arrayInt);
+
+
+        // In giá trị các phần tử trong mảng là số nguyên tố
+        // function isNguyenTo(so) {
+        //     for (i = 2; i <= Math.sqrt(so); i++) {
+        //         if (so % i === 0) {
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
+
+        // for (const value of arrInt) {
+        //     if (isNguyenTo(value)) {
+        //         console.log(value, " la so nguyen to");
+        //     }
+        // }
+
+
+
+
+        // Nhập vào một số nguyên và thống kê có bao nhiêu phần tử có giá trị như vậy
+        // let n = Number(prompt("Nhap vao so nguyen"))
+        // let count = 0
+        // for (const value of arrInt) {
+        //     if (value == n) {
+        //         count++;
+        //     }
+        // }
+        // console.log(`${n} xuat hien ${count} lan`);
+
+
+
+
+        // 2. Khai báo mảng 2 chiều số nguyên arrInt
+        // a. Nhập giá trị các phần tử của mảng từ bàn phím
+        // let arrInt = [];
+        // let x = +prompt("Nhap so phan tu cua mang");
+        // let y = +prompt("Nhap so phan tu cua cac mang con");
+        // for (let i = 0; i < x; i++) {
+        //     arrInt[i] = [];
+        //     for (let j = 0; j < y; j++) {
+        //         arrInt[i][j] = +prompt(`Nhap phan tu thu ${j + 1}/${y} cua mang con ${i + 1}/${x}`);
+        //     }
+        // }
+        // console.log(arrInt);
+        // // b. In giá trị các phần tử của mảng
+        // for (let i in arrInt) {
+        //     console.log("row " + i);
+        //     for (let j in arrInt) {
+        //         console.log(arrInt[i][j]);
+        //     }
+        // }
+        // // c. In giá trị các phần tử nằm trên đường biên (Coi mảng 2 chiều là ma
+        // // trận)
+        // for (let i = 0; i < x; i++) {
+        //     console.log(arrInt[0][i]);
+        //     console.log(arrInt[x - 1][i]);
+        // }
+        // for (let j = 0; j < y; j++) {
+        //     console.log(arrInt[j][0]);
+        //     console.log(arrInt[j][y - 1]);
+        // }
+        // d. In giá trị các phần tử nằm trên đường chéo chính và phụ
+        // function maTran(num) {
+        //     const n = num.length
+        //     console.log(`duong cheo chinh`);
+        //     for (let i = 0; i < n; i++) {
+        //         console.log(num[i][i]);
+        //     }
+        //     console.log(`duong cheo phu`);
+        //     for (let i = 0; i < n; i++) {
+        //         console.log(num[i][n - i - 1]);
+        //     }
+        // }
+        // const num = [
+        //     [4, 2, 3, 1],
+        //     [5, 8, 7, 6],
+        //     [11, 10, 9, 12],
+        //     [15, 14, 13, 16]
+        // ]
+        // maTran(num)
+
+
+        // // e. Sắp xếp mảng tăng dần theo dòng (không và có sử dụng hàm sort)
+        // function tangDan(arr) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         arr[i] = arr[i].sort((a, b) => a - b)
+        //     }
+        //     return arr
+        // }
+
+        // console.log(tangDan(num));
+
+
+
+        // // 3. Tạo mảng có tên là styles có giá trị các phần tử là “Jazz”, “Blues”
+        // let array = ["Jazz", "Blues"];
+        // // a. Thêm phần tử “Rock-n-Roll” vào cuối mảng
+        // array.push("Rock-n-Roll");
+        // // b. Thay thế phần tử nằm chính giữa mảng bằng “Classics” nếu mảng
+        // // có tổng số phần tử là lẻ
+        // if (array.length % 2 !== 0) {
+        //     array[Math.floor(array.length / 2)] = "Classics";
+        // }
+        // // c. Xóa phần tử đầu tiên của mảng và hiển thị mảng
+        // array.shift();
+        // // d. Thêm phần tử “Rap” và “Reggae” vào đầu mảng và hiển thị
+        // array.unshift("Rap");
+        // array.unshift("Reggae");
+        // console.log(array);
+
+
+
+
+        // // 5. Khai báo và khởi tạo mảng 1 chiều số nguyên. Nhập vào 2 số nguyên a, b
+        // // Khởi tạo mảng gồm các phần tử của mảng số nguyên mà giá trị nằm giữa a và b
+
+        // let arrIteger = [];
+        // let a = +prompt("Nhap vao so a:");
+        // let b = +prompt("Nhap vao so b:");
+        // for (i = a; i <= b; i++) {
+        //     arrIteger.push(i);
+        // }
+        // console.log(`So nguyen  dau tien la ${a}`);
+        // console.log(`So nguyen  cuoi cung la ${b}`);
+        // console.log(arrIteger);
+
+
+
+
+
+        // // 4. Khai báo mảng một chiều 
+        // // a. Cho phép người dùng nhập các giá trị của mảng bằng hàm prompt
+        // // và lưu trữ giá trị trong mảng cho đến khi người dùng nhập một giá
+        // // trị không phải là số, một chuỗi trống hoặc nhấn “Cancel”
+        // let arrInt = [];
+        // while (true) {
+        //     let n = Number(prompt("Nhap mot so"));
+        //     if (n || n == 0) {
+        //         arrInt.push(n);
+        //     } else {
+        //         break
+        //     }
+        // }
+        // // b. Tính tổng các giá trị của mảng, in ra phần tử có giá trị max - min (không và có sử dụng hàm Math.max và Math.min)
+        // let sum = 0;
+        // let max = min = arrInt[0];
+        // for (const value of arrInt) {
+        //     if (value > max) {
+        //         max = value
+        //     }
+        //     if (value < min) {
+        //         min = value
+        //     }
+        //     sum += value
+        // }
+        // console.log(`Mang da nhap: ${arrInt}`);
+        // console.log(`Min: ${min}; Max: ${max}; Sum: ${sum}`);
+    </script>
+</body>
+
+</html>

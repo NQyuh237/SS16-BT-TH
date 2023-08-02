@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>th</title>
+</head>
+
+<body>
+    <script>
+        // viết function tính thế kỷ của một năm nhập vào từ bàn phím.Biết thế kỷ thứ nhất tính từ năm 1 đến 100
+        function calculateCentury(year) {
+            return Math.floor(year / 100) + 1;
+        }
+        let year = prompt("Nhập năm: ");
+        let result = calculateCentury(year);
+        console.log("Năm " + year + " thuộc thế kỷ " + result);
+
+    </script>
+</body>
+
+</html>
